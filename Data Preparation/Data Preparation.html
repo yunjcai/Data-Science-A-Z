@@ -13338,8 +13338,8 @@ WHERE [Customer_Name] LIKE '_e%'</font><br></p>
 FROM [TableName]<br>
 ORDER BY [col_name] DESC</font><br>
 注意：因为上传的 Table 是 text，所以按数字列来排序，将会出现问题。需要先 convert text table into a working table 后再排序。或者 CONVERT(FLOAT,[col_name]) 或者 CAST([col_name] as FLOAT)。</p>
-<h3 id="Data-Types-in-SQL">Data Types in SQL<a class="anchor-link" href="#Data-Types-in-SQL">&#182;</a></h3><p>VARCHAR(n): n 字节的可变长度<br>
-INT: $-2^31$ ~ $2^31-1$整数<br>
+<h3 id="Data-Types-in-SQL-(&#24120;&#29992;)">Data Types in SQL (&#24120;&#29992;)<a class="anchor-link" href="#Data-Types-in-SQL-(&#24120;&#29992;)">&#182;</a></h3><p>VARCHAR(n): n 字节的可变长度<br>
+INT: 整数<br>
 FLOAT: 浮点数，1040.53<br>
 DATE: 日期，2015-08-11<br></p>
 <h3 id="Implicit-Data-Conversion-in-SQL">Implicit Data Conversion in SQL<a class="anchor-link" href="#Implicit-Data-Conversion-in-SQL">&#182;</a></h3><p>因为导入SQL的表格数据是 text 类型 (varchar)，所以下表为 varchar 能隐式转换的类型(灰色为可以，黑色不可以)<br>
